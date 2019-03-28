@@ -1,14 +1,30 @@
-# PhoneGap Plugin BarcodeScanner
+# PhoneGap Plugin BarcodeScanner2
 ================================
 
-[![Build Status](https://travis-ci.org/phonegap/phonegap-plugin-barcodescanner.svg)](https://travis-ci.org/phonegap/phonegap-plugin-barcodescanner)
-
 Cross-platform BarcodeScanner for Cordova / PhoneGap.
+
+This is a fork of [phonegap/phonegap-plugin-barcodescanner](https://github.com/phonegap/phonegap-plugin-barcodescanner) with the only difference being the design of the scaning interface.
+
+## Customize it yourself
+
+To customize the design layout for the scanning interface, edit this file: `src/android/barcodescanner-release-2.1.5/res/layout/capture.xml`, then run this commands:
+
+    cd src/android/barcodescanner-release-2.1.5
+    zip -r ../barcodescanner-release-2.1.5.aar *
+
+The button icons are in the directory `src/android/barcodescanner-release-2.1.5/res/drawable`.
+
+After you change an icon, or anything else in the folder `src/android/barcodescanner-release-2.1.5`, you need to run the previous commands as well.
+
+
 
 Follows the [Cordova Plugin spec](https://cordova.apache.org/docs/en/latest/plugin_ref/spec.html), so that it works with [Plugman](https://github.com/apache/cordova-plugman).
 
 ## Installation
 
+Installation with cordova cli:
+
+    cordova plugin add https://github.com/AndreiTelteu/phonegap-plugin-barcodescanner2
 
 This requires phonegap 7.1.0+ ( current stable v8.0.0 )
 
@@ -16,7 +32,7 @@ This requires phonegap 7.1.0+ ( current stable v8.0.0 )
 
 It is also possible to install via repo url directly ( unstable )
 
-    phonegap plugin add https://github.com/phonegap/phonegap-plugin-barcodescanner.git
+    phonegap plugin add https://github.com/AndreiTelteu/phonegap-plugin-barcodescanner2.git
 
 Optional variables:
 This plugin requires the Android support library v4. The minimum version is `24.1.0`. Default value is `27.+`.  Check out the latest version [here](https://developer.android.com/topic/libraries/support-library/revisions.html).

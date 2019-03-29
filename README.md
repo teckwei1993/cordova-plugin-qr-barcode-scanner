@@ -24,20 +24,20 @@ Follows the [Cordova Plugin spec](https://cordova.apache.org/docs/en/latest/plug
 
 Installation with cordova cli:
 
-    cordova plugin add phonegap-plugin-barcodescanner2
+    cordova plugin add cordova-plugin-barcodescanner2
 
 This requires phonegap 7.1.0+ ( current stable v8.0.0 )
 
-    phonegap plugin add phonegap-plugin-barcodescanner2
+    phonegap plugin add cordova-plugin-barcodescanner2
 
 It is also possible to install via repo url directly ( unstable )
 
-    phonegap plugin add phonegap-plugin-barcodescanner2
+    phonegap plugin add cordova-plugin-barcodescanner2
 
 Optional variables:
 This plugin requires the Android support library v4. The minimum version is `24.1.0`. Default value is `27.+`.  Check out the latest version [here](https://developer.android.com/topic/libraries/support-library/revisions.html).
 ```
-phonegap plugin add phonegap-plugin-barcodescanner2 --variable ANDROID_SUPPORT_V4_VERSION="27.1.1"
+phonegap plugin add cordova-plugin-barcodescanner2 --variable ANDROID_SUPPORT_V4_VERSION="27.1.1"
 ```
 ### Supported Platforms
 
@@ -63,7 +63,7 @@ Add the following to your config.xml:
 
 ```
 <!-- add a version here, otherwise PGB will use whatever the latest version of the package on npm is -->
-<plugin name="phonegap-plugin-barcodescanner2" />
+<plugin name="cordova-plugin-barcodescanner2" />
 ```
 On PhoneGap Build if you're using a version of cordova-android of 4 or less, ensure you're building with gradle:
 ```

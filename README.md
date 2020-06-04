@@ -1,3 +1,14 @@
+# Not maintained
+
+This plugin is not maintained anymore.
+
+Please use the original plugin [phonegap/phonegap-plugin-barcodescanner](https://github.com/phonegap/phonegap-plugin-barcodescanner).
+
+Or, better, try this plugin [bitpay/cordova-plugin-qrscanner](https://github.com/bitpay/cordova-plugin-qrscanner).
+
+================================
+
+
 # PhoneGap Plugin BarcodeScanner2
 ================================
 
